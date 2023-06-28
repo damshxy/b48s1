@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/nav.css">
+    <link rel="stylesheet" href="Css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li class="active"><img src="images/logo.png" alt="Logo Dumbways"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My Project</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#">
+                <button>Contact Me</button>
+            </a>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <section>
+        <form class="main-form">
+            <div class="container-form">
+                <h1 class="title-form">GET IN TOUCH</h1>
+                <!-- Input Name -->
+                <div class="inputName">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <!-- End of Input Name -->
+                <!-- Input Email -->
+                <div class="inputEmail">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <!-- End of Input Email -->
+                <!-- Input Phone Number -->
+                <div class="inputPhone">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber">
+                </div>
+                <!-- End of Phone Number -->
+                <!-- Input Subject -->
+                <div class="subject">
+                    <label for="subject">Subject</label>
+                    <select>
+                        <option hidden>Select</option>
+                        <option>Frontend Developer</option>
+                        <option>Backend Developer</option>
+                        <option>Fullstack Developer</option>
+                    </select>
+                </div>
+                <div class="textArea">
+                    <label for="inputTextArea">Your Message</label>
+                    <textarea id="inputTextArea"></textarea>
+                </div>
+                <!-- End of Input Subject -->
+                <!-- Button -->
+                <div class="btn-form">
+                    <button class="btn-submit">Submit</button>
+                </div>
+                <!-- End of Button -->
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
