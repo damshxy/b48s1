@@ -51,11 +51,11 @@
                 <!-- Input Subject -->
                 <div class="subject">
                     <label for="subject">Subject</label>
-                    <select>
-                        <option hidden>Select</option>
-                        <option>Frontend Developer</option>
-                        <option>Backend Developer</option>
-                        <option>Fullstack Developer</option>
+                    <select id="subject">
+                        <option value="" hidden>Select</option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option vakue="Backend Developer">Backend Developer</option>
+                        <option value="Fullstack Developer">Fullstack Developer</option>
                     </select>
                 </div>
                 <div class="textArea">
@@ -65,12 +65,13 @@
                 <!-- End of Input Subject -->
                 <!-- Button -->
                 <div class="btn-form">
-                    <button class="btn-submit">Submit</button>
+                    <button type="button" class="btn-submit" onclick="contactSubmit()">Submit</button>
                 </div>
                 <!-- End of Button -->
             </div>
         </form>
     </section>
+    <script src="Js/contact.js"></script>
 </body>
 
 </html>
