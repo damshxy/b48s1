@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/nav.css">
+    <link rel="stylesheet" href="Css/myProject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Project</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><img src="images/logo.png" alt="Logo Dumbways"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My Project</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="contact.html">
+                <button>Contact Me</button>
+            </a>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <div class="project">
+        <div class="project-form">
+            <div class="form-container">
+                <form onsubmit="postProject(event)">
+                    <div class="input-project">
+                        <h1>ADD PROJECT</h1>
+                        <label for="projectName">Project Name</label>
+                        <input id="projectName" type="text" />
+                        <div class="start-date">
+                            <div class="start-date-left">
+                                <label for="input-start-date">Start Date</label>
+                                <input class="start1-date" type="date" id="input-start-date" />
+                            </div>
+                            <div class="start-date-right">
+                                <label for="input-end-date">End Date</label>
+                                <input class="end-date" type="date" id="input-end-date" />
+                            </div>
+                        </div>
+                        <div class="description">
+                            <label for="input-description">Description</label>
+                            <textarea id="input-description" cols=""></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label for="">Techonlogies</label>
+                            <div class="checkbox-left">
+                                <input type="checkbox" id="nodeCheck">
+                                <label for="nodeCheck">Node Js</label>
+                                <input type="checkbox" id="reactCheck">
+                                <label for="reactCheck">React Js</label>
+                            </div>
+                            <div class="checkbox-right">
+                                <input type="checkbox" id="goCheck">
+                                <label for="goCheck">Golang</label>
+                                <input type="checkbox" id="jsCheck">
+                                <label for="jsCheck">Java Script</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="inputImage">
+                            <label for="input-image">
+                                <p>Choose</p>
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="input-image" hidden />
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button>Submit</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <hr class="line">
+    <div class="container-project">
+        <div class="projects">
+            <h1>My Project</h1>
+            <div class="cardProject" id="cardProject">
+                <div class="imgCard">
+                    <img src="images/blog-img.png" />
+                </div>
+                <div class="title">
+                    <a href="detailProject.html">
+                        <h3>Bootcamp Dumbways</h3>
+                    </a>
+                </div>
+                <div class="duration">
+                    <p>Duration: 15 june 2023 | 15 Aug 2023</p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto, eum culpa atque cum
+                        laudantium alias ipsam ratione veniam cupiditate est ab pariatur dolorem possimus consequatur
+                        ipsa eligendi temporibus excepturi.</p>
+                </div>
+                <div class="tech">
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-golang"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div class="buttons">
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/myProject.js"/>
+</body>
+
+</html>

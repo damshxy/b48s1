@@ -16,7 +16,7 @@
         <ul>
             <li class="active"><img src="images/logo.png" alt="Logo Dumbways"></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">My Project</a></li>
+            <li><a href="myProject.html">My Project</a></li>
         </ul>
         <div class="nav-right">
             <a href="#">
@@ -27,7 +27,7 @@
     <!-- End of Navbar -->
 
     <section>
-        <form class="main-form">
+        <form class="main-form" onsubmit="contactSubmit(event)">
             <div class="container-form">
                 <h1 class="title-form">GET IN TOUCH</h1>
                 <!-- Input Name -->
@@ -65,7 +65,7 @@
                 <!-- End of Input Subject -->
                 <!-- Button -->
                 <div class="btn-form">
-                    <button type="button" class="btn-submit" onclick="contactSubmit()">Submit</button>
+                    <button class="btn-submit">Submit</button>
                 </div>
                 <!-- End of Button -->
             </div>
