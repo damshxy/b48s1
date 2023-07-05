@@ -20,7 +20,7 @@ const emptyProject = () => {
 
 const projectData = [];
 
-const postProject = (event) => {
+function postProject(event) {
   event.preventDefault();
 
   let projectName = document.getElementById("projectName").value;
@@ -64,7 +64,7 @@ const postProject = (event) => {
   renderProject();
 };
 
-const renderProject = () => {
+function renderProject() {
   document.getElementById("cardProject").innerHTML = "";
 
   for (let i = 0; i < projectData.length; i++) {
