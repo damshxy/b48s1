@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Css/all.css">
     <link rel="stylesheet" href="Css/nav.css">
     <link rel="stylesheet" href="Css/myProject.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,7 +20,7 @@
         <ul>
             <li><img src="images/logo.png" alt="Logo Dumbways"></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">My Project</a></li>
+            <li><a class="active" href="#">My Project</a></li>
         </ul>
         <div class="nav-right">
             <a href="contact.html">
@@ -83,42 +84,49 @@
             </form>
         </div>
     </div>
-
     <hr class="line">
     <div class="container-project">
         <div class="projects">
             <h1>My Project</h1>
-            <div class="cardProject" id="cardProject">
-                <div class="imgCard">
-                    <img src="images/blog-img.png" />
-                </div>
-                <div class="title">
-                    <a href="detailProject.html">
-                        <h3>Bootcamp Dumbways</h3>
-                    </a>
-                </div>
-                <div class="duration">
-                    <p>Duration: 15 june 2023 | 15 Aug 2023</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto, eum culpa atque cum
-                        laudantium alias ipsam ratione veniam cupiditate est ab pariatur dolorem possimus consequatur
-                        ipsa eligendi temporibus excepturi.</p>
-                </div>
-                <div class="tech">
-                    <i class="fa-brands fa-node-js"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-golang"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                </div>
-                <div class="buttons">
-                    <button type="button">Edit</button>
-                    <button type="button">Delete</button>
+            <div class="containerCardProject" id="cardProject">
+                <div class="cardProject">
+                    <div class="imgCard">
+                        <img src="images/blog-img.png" />
+                    </div>
+                    <div class="title">
+                        <a href="detailProject.html">
+                            <h3>Bootcamp Dumbways</h3>
+                        </a>
+                    </div>
+                    <div class="duration">
+                        <p class="durationDate">Start - End : 15 June 2023 | 15 Aug 2023</p>
+                        <p class="durationTime">Duration : 2 Month</p>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto, eum culpa
+                            atque
+                            cum
+                            laudantium alias ipsam ratione veniam cupiditate est ab pariatur dolorem possimus
+                            consequatur
+                            ipsa eligendi temporibus excepturi.
+                        </p>
+                    </div>
+                    <div class="tech">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-golang"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <div class="buttons">
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="Js/myProject.js"/>
+    <script src="Js/myProject.js" />
 </body>
 
 </html>

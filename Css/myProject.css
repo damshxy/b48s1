@@ -32,6 +32,10 @@ textarea {
   resize: none;
 }
 
+.project-form form textarea {
+  height: 150px;
+}
+
 /* Start Date */
 .start-date {
   display: flex;
@@ -145,19 +149,22 @@ form .button button:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 40px;
+  margin: 2%;
   padding: 20px;
+}
+
+.containerCardProject {
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #c4c4c4;
 }
 
 .cardProject {
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
-  width: 450px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px #c4c4c4;
 }
 
-.cardProject img {
+.cardProject .imgCard img {
   width: 100%;
   border-radius: 8px;
 }
@@ -166,37 +173,37 @@ form .button button:hover {
   text-align: justify;
 }
 
-.cardProject .duration p {
+.cardProject .duration .durationDate {
+  text-align: justify;
+}
+
+.cardProject .duration .durationTime {
   text-align: justify;
   padding-bottom: 20px;
 }
 
 .cardProject .content p {
   text-align: justify;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .cardProject .tech {
   text-align: justify;
   font-size: 30px;
-}
-
-.cardProject .buttons {
-  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .cardProject .buttons button {
-  padding: 8px;
-  width: 30%;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 5px;
+  width: 110px;
   background-color: black;
   color: white;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .cardProject .buttons button:hover {
   background-color: white;
   color: black;
 }
-
 /* End of Card Project */

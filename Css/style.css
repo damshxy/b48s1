@@ -3,8 +3,8 @@
   flex-direction: row;
   font-size: 22px;
   width: auto;
-  margin: 100px;
-  padding: 50px 350px 50px;
+  margin: 110px;
+  padding: 210px;
   border-radius: 10px;
   box-shadow: 0 0 15px #cecece;
 }
@@ -22,8 +22,6 @@
 .home-left .title .paragraph {
   text-align: justify;
 }
-
-
 
 .buttonAndSocial button {
   background-color: black;

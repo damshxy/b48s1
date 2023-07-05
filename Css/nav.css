@@ -1,7 +1,7 @@
 nav {
     display: flex;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 nav ul {
@@ -12,7 +12,7 @@ nav ul {
     align-items: center;
     height: 100%;
     gap: 20px;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 nav ul img {
@@ -20,22 +20,22 @@ nav ul img {
     margin-top: 7px;
     padding-right: 10px;
     object-fit: contain;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 nav ul li {
     list-style-type: none;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 nav ul li .active {
-    background-color: black;
+    font-weight: 700;
 }
 
 nav ul li a {
     white-space: nowrap;
     color: black;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 .nav-home {
@@ -53,7 +53,7 @@ nav ul li a:hover{
     justify-content: flex-end;
     margin-right: 30px;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #eeeee4;
 }
 
 .nav-right a {

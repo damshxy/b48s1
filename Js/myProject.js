@@ -47,10 +47,13 @@ function postProject(event) {
 
   image = URL.createObjectURL(image[0]);
 
+  let timeDistance = getDistanceTime()
+
   let projectPreviewCard = {
     projectName,
     startDate,
     endDate,
+    timeDistance,
     description,
     nodeChecked,
     reactChecked,
@@ -79,7 +82,8 @@ function renderProject() {
                     </a>
                 </div>
                 <div class="duration">
-                    <p>Duration: ${projectData[i].startDate} | ${projectData[i].endDate}</p>
+                    <p class="durationDate">Start - End : ${projectData[i].startDate} | ${projectData[i].endDate}</p>
+                    <p class="durationTime">Duration : ${projectData[i].timeDistance}</p>
                 </div>
                 <div class="content">
                     <p>${projectData[i].description}</p>
@@ -97,3 +101,40 @@ function renderProject() {
             </div>`;
   }
 };
+
+
+ function getDistanceTime() {
+  const milliesecond = 1000
+  const second = 3600
+  const day = 24
+  const week = 7
+  const month = 30
+  const year = 12
+
+
+   let startDate = new Date(document.getElementById("input-start-date").value);
+   let endDate = new Date(document.getElementById("input-end-date").value);
+   let distance = new Date(endDate) - new Date(startDate);
+   let days = Math.floor(distance / (milliesecond * second * day));
+   let weeks = Math.floor(distance / (milliesecond * second * day * week));
+   let months = Math.floor(distance / (milliesecond * second * day * month));
+   let years = Math.floor(distance / (milliesecond * second * day * month * year));
+
+   if (years == 1) {
+     return `${years} year`;
+   } else if (years > 0) {
+     return `${years} years`;
+   } else if (months == 1) {
+     return `${months} month`;
+   } else if (months > 0) {
+     return `${months} months`;
+   } else if (weeks == 1) {
+     return `${weeks} week`;
+   } else if (weeks > 0) {
+     return `${weeks} weeks`;
+   } else if (days == 1) {
+     return `${days} day`;
+   } else if (days > 0) {
+     return `${days} days`
+   }
+ }
