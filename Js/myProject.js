@@ -71,6 +71,9 @@ function renderProject() {
   document.getElementById("cardProject").innerHTML = "";
 
   for (let i = 0; i < projectData.length; i++) {
+    let formattedStartDate = formatDate(projectData[i].startDate);
+    let formattedEndDate = formatDate(projectData[i].endDate);
+
     document.getElementById("cardProject").innerHTML += `
         <div class="cardProject" id="cardProject">
                 <div class="imgCard">
@@ -82,7 +85,7 @@ function renderProject() {
                     </a>
                 </div>
                 <div class="duration">
-                    <p class="durationDate">Start - End : ${projectData[i].startDate} | ${projectData[i].endDate}</p>
+                    <p class="durationDate">Start - End : ${formattedStartDate} | ${formattedEndDate}</p>
                     <p class="durationTime">Duration : ${projectData[i].timeDistance}</p>
                 </div>
                 <div class="content">
@@ -137,4 +140,30 @@ function renderProject() {
    } else if (days > 0) {
      return `${days} days`
    }
+ }
+
+ function formatDate(dateString) {
+   const monthsName = [
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December",
+   ];
+
+   const date = new Date(dateString);
+   const monthIndex = date.getMonth();
+   const monthName = monthsName[monthIndex];
+
+   const day = date.getDate();
+   const year = date.getFullYear();
+
+   return `${monthName} ${day}, ${year}`;
  }
