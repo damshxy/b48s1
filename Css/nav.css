@@ -66,3 +66,46 @@ nav ul li a:hover{
     color: white;
     background-color: black;
 }
+
+.btn-barsMenu {
+  display: none;
+}
+
+.itemBars {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .collapseItems {
+    display: none;
+  }
+
+  .btn-barsMenu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-barsMenu button {
+    background-color: #eeeee4;
+    border: none;
+    cursor: pointer;
+  }
+
+  .itemBars {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .itemBars a {
+    padding: 5px;
+    width: auto;
+    background-color: grey;
+    color: white;
+  }
+
+  .itemBars a:hover {
+    border: 1px solid white;
+    color: black;
+  }
+}

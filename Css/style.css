@@ -4,7 +4,7 @@
   font-size: 22px;
   width: auto;
   margin: 110px;
-  padding: 210px;
+  padding: 200px;
   border-radius: 10px;
   box-shadow: 0 0 15px #cecece;
 }
@@ -12,7 +12,6 @@
 .home {
   display: flex;
   flex-direction: start;
-
 }
 
 .home .title {
@@ -64,6 +63,22 @@
   border-radius: 10px;
 }
 
-.card h3, h5 {
+.card h3,
+h5 {
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home-left .title .paragraph {
+    text-align: justify;
+  }
+  
+  .social {
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }

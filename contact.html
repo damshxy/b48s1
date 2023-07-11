@@ -9,6 +9,9 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact</title>
 </head>
 
@@ -16,16 +19,26 @@
     <!-- Navbar -->
     <nav>
         <ul>
-            <li class="active"><img src="images/logo.png" alt="Logo Dumbways"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="myProject.html">My Project</a></li>
+            <li><img src="images/logo.png" alt="Logo Dumbways"></li>
+            <li class="collapseItems"><a class="active" href="index.html">Home</a></li>
+            <li class="collapseItems"><a href="myProject.html">My Project</a></li>
         </ul>
         <div class="nav-right">
-            <a href="#">
+            <a href="contact.html" class="collapseItems">
                 Contact Me
             </a>
         </div>
+        <div class="btn-barsMenu nav-right">
+            <button onclick="responsiveNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </nav>
+    <div class="itemBars" id="btn-itemMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="contact.html">Contact</a>
+    </div>
     <!-- End of Navbar -->
 
     <section>
@@ -74,6 +87,7 @@
         </form>
     </section>
     <script src="Js/contact.js"></script>
+    <script src="Js/index.js"></script>
 </body>
 
 </html>

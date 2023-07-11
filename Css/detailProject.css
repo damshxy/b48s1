@@ -59,10 +59,16 @@ h2 {
 
 .paragraph {
     margin: 20px;
-    padding: 500px;
+    padding: 200px;
     padding-top: 50px;
 }
 
 .paragraph p {
     text-align: justify;
+}
+
+@media only screen and (max-width: 1200px) {
+    .paragraph p {
+        text-align: justify;
+    }
 }

@@ -20,15 +20,25 @@
      <nav>
           <ul>
                <li><img src="images/logo.png" alt="Logo Dumbways"></li>
-               <li><a class="active" href="#">Home</a></li>
-               <li><a href="myProject.html">My Project</a></li>
+               <li class="collapseItems"><a class="active" href="#">Home</a></li>
+               <li class="collapseItems"><a href="myProject.html">My Project</a></li>
           </ul>
           <div class="nav-right">
-               <a href="contact.html">
+               <a href="contact.html" class="collapseItems">
                     Contact Me
                </a>
           </div>
+          <div class="btn-barsMenu nav-right">
+               <button onclick="responsiveNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+               </button>
+          </div>
      </nav>
+     <div class="itemBars" id="btn-itemMenu">
+          <a href="index.html" class="active">Home</a>
+          <a href="myProject.html">My Project</a>
+          <a href="contact.html">Contact</a>
+     </div>
      <!-- End of Navbar -->
      <section>
           <div class="container">
@@ -94,6 +104,7 @@
                </div>
           </div>
      </section>
+     <script src="Js/index.js"></script>
 </body>
 
 </html>
