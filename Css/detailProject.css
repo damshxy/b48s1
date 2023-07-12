@@ -67,7 +67,7 @@ h2 {
     text-align: justify;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1550px) {
     .paragraph p {
         text-align: justify;
     }

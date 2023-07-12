@@ -67,6 +67,12 @@ nav ul li a:hover{
     background-color: black;
 }
 
+.nav-right a:hover {
+  background-color: white;
+  color: orangered;
+  border: 1px solid black;
+}
+
 .btn-barsMenu {
   display: none;
 }
@@ -75,7 +81,7 @@ nav ul li a:hover{
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1550px) {
   .collapseItems {
     display: none;
   }
