@@ -84,80 +84,80 @@
 
 // document.getElementById("testimonials").innerHTML = testimonialHTML;
 
-const testimonialData = [
-  {
-    author: "Batuhan",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
-    rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1686041673559-a763bd15d2f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    author: "Lucas",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
-    rating: 4,
-    image:
-      "https://images.unsplash.com/photo-1685627298101-01b11fe1b17c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    author: "Chuko",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
-    rating: 3,
-    image:
-      "https://images.unsplash.com/photo-1686781483909-a5fb625ca043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
-  },
-  {
-    author: "Sergey",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
-    rating: 2,
-    image:
-      "https://images.unsplash.com/photo-1633190323610-49a306581216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-  },
-];
+// const testimonialData = [
+//   {
+//     author: "Batuhan",
+//     quote:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
+//     rating: 5,
+//     image:
+//       "https://images.unsplash.com/photo-1686041673559-a763bd15d2f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+//   },
+//   {
+//     author: "Lucas",
+//     quote:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
+//     rating: 4,
+//     image:
+//       "https://images.unsplash.com/photo-1685627298101-01b11fe1b17c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+//   },
+//   {
+//     author: "Chuko",
+//     quote:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
+//     rating: 3,
+//     image:
+//       "https://images.unsplash.com/photo-1686781483909-a5fb625ca043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
+//   },
+//   {
+//     author: "Sergey",
+//     quote:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egetlectus eu libero venenatis gravida eget vel odio.",
+//     rating: 2,
+//     image:
+//       "https://images.unsplash.com/photo-1633190323610-49a306581216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+//   },
+// ];
 
-function getAllTestimonials() {
-  let testimonialHTML = ''
+// function getAllTestimonials() {
+//   let testimonialHTML = ''
 
-  testimonialData.forEach((card) => {
-    testimonialHTML += `
-        <div class="testimonial">
-         <img src="${card.image}" alt="" class="profile-testimonial" />
-          <p class="quote">
-             ${card.quote}
-          </p>
-          <p class="author">- ${card.author}</p>
-          <p class="author">- ${card.rating}  <i class="fa-solid fa-star"></i></p>
-        </div>
-    `;
-  })
+//   testimonialData.forEach((card) => {
+//     testimonialHTML += `
+//         <div class="testimonial">
+//          <img src="${card.image}" alt="" class="profile-testimonial" />
+//           <p class="quote">
+//              ${card.quote}
+//           </p>
+//           <p class="author">- ${card.author}</p>
+//           <p class="author">- ${card.rating}  <i class="fa-solid fa-star"></i></p>
+//         </div>
+//     `;
+//   })
 
-  document.getElementById('testimonials').innerHTML = testimonialHTML
-}
+//   document.getElementById('testimonials').innerHTML = testimonialHTML
+// }
 
-getAllTestimonials()
+// getAllTestimonials()
 
-function getFilteredTestimonials(rating) {
-  let filteredTestimonialHTML = ''
+// function getFilteredTestimonials(rating) {
+//   let filteredTestimonialHTML = ''
 
-  const filteredData = testimonialData.filter((card) => {
-    return card.rating === rating;
-  })
+//   const filteredData = testimonialData.filter((card) => {
+//     return card.rating === rating;
+//   })
 
-  filteredData.forEach((card) => {
-    filteredTestimonialHTML += `
-    <div class="testimonial">
-         <img src="${card.image}" alt="" class="profile-testimonial" />
-          <p class="quote">
-             ${card.quote}
-          </p>
-          <p class="author">- ${card.author}</p>
-          <p class="author"> ${card.rating}  <i class="fa-solid fa-star"></i></p>
-        </div>
-    `;
-  })
-  document.getElementById('testimonials').innerHTML = filteredTestimonialHTML
-}
+//   filteredData.forEach((card) => {
+//     filteredTestimonialHTML += `
+//     <div class="testimonial">
+//          <img src="${card.image}" alt="" class="profile-testimonial" />
+//           <p class="quote">
+//              ${card.quote}
+//           </p>
+//           <p class="author">- ${card.author}</p>
+//           <p class="author"> ${card.rating}  <i class="fa-solid fa-star"></i></p>
+//         </div>
+//     `;
+//   })
+//   document.getElementById('testimonials').innerHTML = filteredTestimonialHTML
+// }
