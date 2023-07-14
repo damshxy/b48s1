@@ -1,112 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/all.css" />
+    <link rel="stylesheet" href="Css/nav.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Personal Web</title>
+  </head>
 
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="Css/all.css">
-     <link rel="stylesheet" href="Css/nav.css">
-     <link rel="stylesheet" href="Css/style.css">
-     <link rel="icon" href="images/logo.png" type="image/x-icon">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <title>Personal Web</title>
-</head>
-
-<body>
-     <!-- Navbar -->
-     <nav>
-          <ul>
-               <li><img src="images/logo.png" alt="Logo Dumbways"></li>
-               <li class="collapseItems"><a class="active" href="#">Home</a></li>
-               <li class="collapseItems"><a href="myProject.html">My Project</a></li>
-               <li class="collapseItems"><a href="testimonial.html">Testimonial</a></li>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid text-center d-flex mx-5">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myproject.html">Add Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Testimonial</a>
+            </li>
           </ul>
-          <div class="nav-right">
-               <a href="contact.html" class="collapseItems">
-                    Contact Me
-               </a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-link">
+              <a
+                href="contact.html"
+                class="btn btn-outline-secondary"
+                style="
+                  background-color: black;
+                  color: white;
+                  border-style: none;
+                "
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Of Navbar -->
+    <!-- Home Start -->
+    <section class="profile" id="profile">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 p-5 mt-5 text-black">
+            <h3 class="fw-bold">Hi Welcome to my hut</h3>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+              harum ad neque sequi laboriosam repellat illum? Cumque,
+              consequuntur eligendi animi doloribus error aliquam quisquam,
+              debitis minus excepturi, eum illo sint? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur fugit aspernatur
+              praesentium, dolorem repellat doloribus? Quae temporibus nisi
+              ipsum voluptatibus quas, cum ad illum et architecto, tenetur sit
+              quis perspiciatis.
+            </p>
+            <a
+              href="contact.html"
+              class="btn btn-primary mx-2"
+              style="background-color: black; color: white; border-style: none"
+              >Contact</a
+            >
+            download cv
+            <a href="PDF/sezyxx.pdf" class="mx-1"
+              ><i
+                class="fa-solid fa-arrow-down"
+                style="text-decoration: none; color: black"
+              ></i
+            ></a>
+            <div class="iconSocial icon mt-5 fs-4 mx-2">
+              <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/nczeesh">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://twitter.com/nczeesh">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/encdamz">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
-          <div class="btn-barsMenu nav-right">
-               <button onclick="responsiveNavbar()">
-                    <i class="fa-solid fa-bars"></i>
-               </button>
+          <div class="col-md-5 p-5">
+            <div class="card mx-2 p-2">
+              <img src="images/fotoProfile.jpg" class="card-img-top rounded" />
+              <div class="card-body text-center">
+                <h3>Mochamad Saddam</h3>
+                <p>Fullstack Developer</p>
+              </div>
+            </div>
           </div>
-     </nav>
-     <div class="itemBars" id="btn-itemMenu">
-          <a href="index.html" class="active">Home</a>
-          <a href="myProject.html">My Project</a>
-          <a href="testimonial.html">Testimonial</a>
-          <a href="contact.html">Contact</a>
-     </div>
-     <!-- End of Navbar -->
-     <section>
-          <div class="container">
-               <div class="home">
-                    <div class="home-left">
-                         <!-- Heading -->
-                         <h3 class="title">
-                              Hi Welcome to my hut
-                         </h3>
-                         <!-- End of Heading -->
-                         <!-- Paragraph -->
-                         <p class="paragraph">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequuntur repellat quia
-                              ipsa laudantium eius reiciendis nostrum adipisci excepturi a impedit aliquam eos
-                              praesentium necessitatibus molestias, deserunt, quaerat eveniet ipsam?
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima laborum nam
-                              mollitia illum, iusto harum ullam. Excepturi corporis necessitatibus assumenda, nostrum
-                              recusandae enim facilis quisquam iure vero maiores repellat!
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum tempore enim odit
-                              tempora dolorum rem quia, voluptatibus in. Accusamus enim soluta aspernatur nisi obcaecati
-                              eveniet et dicta, quis quam eos?
-                         </p>
-                         <!-- End of Paragraph -->
-                         <div class="buttonAndSocial">
-                              <!-- button -->
-                              <div class="button">
-                                   <a href="contact.html">
-                                        <button>
-                                             Contact
-                                        </button>
-                                   </a>
-                                   Donwload Cv <a href="pdf/sezyxx.pdf">
-                                        <i class="fa-solid fa-arrow-down"></i>
-                                   </a>
-                              </div>
-                              <!-- End of button -->
-                              <!-- social -->
-                              <div class="social">
-                                   <a href="https://github.com/NcZeesh">
-                                        <i class="fa-brands fa-github"></i>
-                                   </a>
-                                   <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                   </a>
-                                   <a href="https://instagram.com/encdamz">
-                                        <i class="fa-brands fa-instagram"></i>
-                                   </a>
-                                   <a href="https://twitter.com/nczeesh">
-                                        <i class="fa-brands fa-twitter"></i>
-                                   </a>
-
-                              </div>
-                              <!-- End of social -->
-                         </div>
-                    </div>
-                    <div class="home-right">
-                         <div class="card">
-                              <img src="images/fotoProfile.jpg" />
-                              <h3>Mochamad Saddam</h3>
-                              <h5>Fullstack Developer</h5>
-                         </div>
-                    </div>
-               </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Project -->
+    <hr />
+    <div>
+      <h1 class="d-flex justify-content-center">My Project</h1>
+    </div>
+    <div class="container text-center card" style="width: 20%">
+      <div class="row">
+        <div class="col">
+          <img
+            src="images/blog-img.png"
+            style="width: 100%; padding-top: 15px; border-radius: 8px"
+          />
+          <div class="title">
+            <a
+              href="detailProject.html"
+              style="text-decoration: none; color: black"
+            >
+              <h3>Bootcamp Dumbways</h3>
+            </a>
           </div>
-     </section>
-     <script src="Js/index.js"></script>
-</body>
-
+          <div class="duration">
+            <p class="durationTime d-flex">Duration : 2 Month</p>
+          </div>
+          <p class="d-flex" style="text-align: justify">
+            Bootcamp Dumbways ini untuk orang orang yang ingin alih profesi
+            menjadi IT
+          </p>
+          <p
+            class="icon"
+            style="font-size: 20px; display: flex; justify-content: start"
+          >
+            <i
+              class="fa-brands fa-node"
+              id="node-icon"
+              style="padding-left: 5px"
+            ></i>
+            <i
+              class="fa-brands fa-react"
+              id="react-icon"
+              style="padding-left: 5px"
+            ></i>
+            <i
+              class="fa-brands fa-golang"
+              id="golang-icon"
+              style="padding-left: 5px"
+            ></i>
+            <i
+              class="fa-brands fa-square-js"
+              id="js-icon"
+              style="padding-left: 5px"
+            ></i>
+          </p>
+          <div class="buttons">
+            <button
+              type="button"
+              class="button btn btn-secondary btn-sm"
+              style="background-color: black; color: white"
+            >
+              Edit
+            </button>
+            <button
+              type="button"
+              class="button btn btn-secondary btn-sm"
+              style="background-color: black; color: white"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Js/index.js"></script>
+  </body>
 </html>
